@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\18099\\source\\repos\\MVC_Prueba_Tecnica\\MVC_Prueba_Tecnica\\wwwroot\\dgiiicon.png",
+      "PackagePath": "staticwebassets\\dgiiicon.png"
+    },
+    {
       "Id": "C:\\Users\\18099\\source\\repos\\MVC_Prueba_Tecnica\\MVC_Prueba_Tecnica\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uGUhq4YPSCh7/Kyck8h09Xs3rFVzDtW+XgZobG14UuI=",
+  "Hash": "5ZivRpjt997lNPU7i1wQI7oAz7Ol7opPhCCjvQycL2c=",
   "Source": "MVC_Prueba_Tecnica",
   "BasePath": "_content/MVC_Prueba_Tecnica",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\18099\\source\\repos\\MVC_Prueba_Tecnica\\MVC_Prueba_Tecnica\\wwwroot\\dgiiicon.png",
+      "SourceId": "MVC_Prueba_Tecnica",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\18099\\source\\repos\\MVC_Prueba_Tecnica\\MVC_Prueba_Tecnica\\wwwroot\\",
+      "BasePath": "_content/MVC_Prueba_Tecnica",
+      "RelativePath": "dgiiicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dgiiicon.png"
     },
     {
       "Identity": "C:\\Users\\18099\\source\\repos\\MVC_Prueba_Tecnica\\MVC_Prueba_Tecnica\\wwwroot\\favicon.ico",
