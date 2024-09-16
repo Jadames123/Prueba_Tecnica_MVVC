@@ -1,0 +1,75 @@
+﻿@model IEnumerable<MVC_Prueba_Tecnica.Models.TablaContribuyente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Contribuyentes</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-primary">Nuevo contribuyente</a>
+</p>
+
+<h5>Contribuyentes</h5>
+
+<table class="table table-green table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RncCedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RncCedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estatus)
+            </td>
+            <td>
+                    <a asp-action="Edit" class="btn btn-outline-primary" asp-route-id="@item.RncCedula">Editar</a> |
+                    <a asp-action="Details" class="btn btn-warning" asp-route-id="@item.RncCedula">Detalles</a> |
+                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.RncCedula">Eliminar</a>
+                    <!--<a asp-action="comprobantes" class="btn btn-primary" asp-route-id="@item.RncCedula">Ver comprobantes</a>-->
+                    <button type="button" class="btn btn-primary" id="verComprobantesBtn">Ver Comprobantes</button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div id="comprobantesContainer" style="display:none;">
+    <h5>Comprobantes por contribuyentes</h5>
+    <ul>
+        
+    </ul>
+</div>
+
+
+
+<script>
+    document.getElementById('verComprobantesBtn').addEventListener('click', function () {
+        var container = document.getElementById('comprobantesContainer');
+        container.style.display = container.style.display === 'none' ? 'block' : 'none';
+    });
+
+</script>

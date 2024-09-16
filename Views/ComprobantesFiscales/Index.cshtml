@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MVC_Prueba_Tecnica.Models.TablaComprobantesFiscale>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Comprobantes Fiscales</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-primary">Nuevo comprobante</a>
+</p>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NCF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Monto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Itbis18)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RncCedulaNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NCF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Monto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Itbis18)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RncCedulaNavigation.RncCedula)
+            </td>
+            <td>
+              
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

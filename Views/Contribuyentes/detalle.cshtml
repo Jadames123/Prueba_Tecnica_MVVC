@@ -1,0 +1,34 @@
+﻿@model IEnumerable<MVC_Prueba_Tecnica.Models.TablaComprobantesFiscale>
+
+@{
+    ViewData["Title"] = "detalle";
+}
+
+<head>
+    <title>Comprobantes</title>
+</head>
+
+<body>
+    <h2>Comprobantes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Numero de comprobante</th>
+                <th>ITBIS</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var comprobante in Model)
+            {
+                <tr>@comprobante.NCF </tr>
+                <tr>@comprobante.Itbis18</tr>
+            }
+        </tbody>
+    </table>
+    <h3>Total ITBIS: @ViewBag.TOTALITBIS</h3>
+</body>
+    
+
+
+<!--<a href="@Url.Action("Index")">Volver a la lista de contribuyentes</a>-->
+
