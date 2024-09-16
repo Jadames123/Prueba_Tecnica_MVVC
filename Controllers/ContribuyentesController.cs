@@ -45,7 +45,7 @@ namespace MVC_Prueba_Tecnica.Controllers
          }
 
         // Acción para mostrar comprobantes fiscales y la suma total del ITBIS
-        public async Task<ActionResult> Detalles(string id)
+       /* public async Task<ActionResult> Detalles(string id)
         {
             if(string.IsNullOrEmpty(id))
             {
@@ -65,7 +65,7 @@ namespace MVC_Prueba_Tecnica.Controllers
             ViewBag.TOTALITBIS = comprobantes.Sum(c => c.Itbis18);
 
             return View(comprobantes);
-        }
+        }*/
 
         // GET: Contribuyentes/Details/5
         public async Task<IActionResult> Details(string id)
